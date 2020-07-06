@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/riot-project/static/css/main.523f09c5.chunk.css",
-    "main.js": "/riot-project/static/js/main.606bcc31.chunk.js",
-    "main.js.map": "/riot-project/static/js/main.606bcc31.chunk.js.map",
+    "main.js": "/riot-project/static/js/main.09ae3708.chunk.js",
+    "main.js.map": "/riot-project/static/js/main.09ae3708.chunk.js.map",
     "runtime-main.js": "/riot-project/static/js/runtime-main.9f54af66.js",
     "runtime-main.js.map": "/riot-project/static/js/runtime-main.9f54af66.js.map",
     "static/js/2.6e967cac.chunk.js": "/riot-project/static/js/2.6e967cac.chunk.js",
     "static/js/2.6e967cac.chunk.js.map": "/riot-project/static/js/2.6e967cac.chunk.js.map",
     "index.html": "/riot-project/index.html",
-    "precache-manifest.eaceab16d36092d5c24798606b234092.js": "/riot-project/precache-manifest.eaceab16d36092d5c24798606b234092.js",
+    "precache-manifest.0f4d4001c970b96e5cfe1c878c9c3791.js": "/riot-project/precache-manifest.0f4d4001c970b96e5cfe1c878c9c3791.js",
     "service-worker.js": "/riot-project/service-worker.js",
     "static/css/main.523f09c5.chunk.css.map": "/riot-project/static/css/main.523f09c5.chunk.css.map",
     "static/js/2.6e967cac.chunk.js.LICENSE.txt": "/riot-project/static/js/2.6e967cac.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.9f54af66.js",
     "static/js/2.6e967cac.chunk.js",
     "static/css/main.523f09c5.chunk.css",
-    "static/js/main.606bcc31.chunk.js"
+    "static/js/main.09ae3708.chunk.js"
   ]
 }
