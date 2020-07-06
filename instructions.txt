@@ -1,0 +1,13 @@
+1) Install Node 12.18.2
+2) git clone https://github.com/dkasima1/riot-project.git
+3) npm Install
+
+
+
+
+
+
+
+Git Branch Control
+1) git fetch
+2) git checkout -b <Name of local Branch tracking remote> origin/<remote branch name>
