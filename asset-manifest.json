@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/~jchen268/Website/main/index.htmlstatic/css/main.523f09c5.chunk.css",
-    "main.js": "/~jchen268/Website/main/index.htmlstatic/js/main.8fe178ad.chunk.js",
-    "main.js.map": "/~jchen268/Website/main/index.htmlstatic/js/main.8fe178ad.chunk.js.map",
-    "runtime-main.js": "/~jchen268/Website/main/index.htmlstatic/js/runtime-main.7f6bc679.js",
-    "runtime-main.js.map": "/~jchen268/Website/main/index.htmlstatic/js/runtime-main.7f6bc679.js.map",
-    "static/js/2.6e967cac.chunk.js": "/~jchen268/Website/main/index.htmlstatic/js/2.6e967cac.chunk.js",
-    "static/js/2.6e967cac.chunk.js.map": "/~jchen268/Website/main/index.htmlstatic/js/2.6e967cac.chunk.js.map",
-    "index.html": "/~jchen268/Website/main/index.htmlindex.html",
-    "precache-manifest.83792fe9efc0a5e7a3159a0645144dc7.js": "/~jchen268/Website/main/index.htmlprecache-manifest.83792fe9efc0a5e7a3159a0645144dc7.js",
-    "service-worker.js": "/~jchen268/Website/main/index.htmlservice-worker.js",
-    "static/css/main.523f09c5.chunk.css.map": "/~jchen268/Website/main/index.htmlstatic/css/main.523f09c5.chunk.css.map",
-    "static/js/2.6e967cac.chunk.js.LICENSE.txt": "/~jchen268/Website/main/index.htmlstatic/js/2.6e967cac.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/~jchen268/Website/main/index.htmlstatic/media/logo.ee7cd8ed.svg"
+    "main.css": "/riot-project/static/css/main.523f09c5.chunk.css",
+    "main.js": "/riot-project/static/js/main.606bcc31.chunk.js",
+    "main.js.map": "/riot-project/static/js/main.606bcc31.chunk.js.map",
+    "runtime-main.js": "/riot-project/static/js/runtime-main.9f54af66.js",
+    "runtime-main.js.map": "/riot-project/static/js/runtime-main.9f54af66.js.map",
+    "static/js/2.6e967cac.chunk.js": "/riot-project/static/js/2.6e967cac.chunk.js",
+    "static/js/2.6e967cac.chunk.js.map": "/riot-project/static/js/2.6e967cac.chunk.js.map",
+    "index.html": "/riot-project/index.html",
+    "precache-manifest.eaceab16d36092d5c24798606b234092.js": "/riot-project/precache-manifest.eaceab16d36092d5c24798606b234092.js",
+    "service-worker.js": "/riot-project/service-worker.js",
+    "static/css/main.523f09c5.chunk.css.map": "/riot-project/static/css/main.523f09c5.chunk.css.map",
+    "static/js/2.6e967cac.chunk.js.LICENSE.txt": "/riot-project/static/js/2.6e967cac.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/riot-project/static/media/logo.ee7cd8ed.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7f6bc679.js",
+    "static/js/runtime-main.9f54af66.js",
     "static/js/2.6e967cac.chunk.js",
     "static/css/main.523f09c5.chunk.css",
-    "static/js/main.8fe178ad.chunk.js"
+    "static/js/main.606bcc31.chunk.js"
   ]
 }
