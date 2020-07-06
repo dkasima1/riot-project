@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>riot-project/App.js</code> and save to reload.
+          Edit <code>riot-project/App.js</code> and save to reload. Sweg
         </p>
         <a
           className="App-link"
