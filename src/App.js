@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>riot-project/App.js</code> and save to reload.
+          Day 1: The Suffering Begins
         </p>
         <a
           className="App-link"
