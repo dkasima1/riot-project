@@ -9,6 +9,7 @@ function App() {
     <React.Fragment>
       <Router>
         <NavigationBar />
+        <Canvas />
         <Switch>
           {/* <Route path="/Sorting/Bubble_Sort" component={ Bubble_Sort } /> */}
         </Switch>

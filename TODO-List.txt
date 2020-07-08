@@ -1,0 +1,2 @@
+1) Nav-bar: Stats, Champions, Leaderboards
+2) Player Search Bar

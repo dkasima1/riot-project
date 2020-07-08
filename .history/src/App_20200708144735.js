@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavigationBar from "./components/NavigationBar"
+
 import './App.css';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <React.Fragment>
       <Router>
         <NavigationBar />
+        <Canvas />
         <Switch>
           {/* <Route path="/Sorting/Bubble_Sort" component={ Bubble_Sort } /> */}
         </Switch>
