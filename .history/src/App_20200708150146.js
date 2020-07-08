@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavigationBar from "./components/NavigationBar";
-import SearchPage from "./components/SearchPage";
+import NavigationBar from "./components/NavigationBar"
 import './App.css';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
           <Route path="/Champions" component={ Champions } />
           <Route path="/Stats" component={ Stats } /> */}
         </Switch>
-        <SearchPage />
       </Router>
     </React.Fragment>
   );
