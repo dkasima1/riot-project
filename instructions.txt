@@ -1,9 +1,10 @@
 Installing Project Locally
-1) Install Node 12.18.2
+1) Install Node 12.18.2 and Yarn
 2) git clone https://github.com/dkasima1/riot-project.git
 3) npm install
 4) yarn add react-router-dom
 5) yarn add react-bootstrap bootstrap
+6) yarn add styled-components
 
 
 Git Branch Control
