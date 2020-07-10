@@ -1,8 +1,20 @@
 .active-pink-4 input[type="text"]:focus:not([readonly]) {
-    border: 1px solid #f48fb1;
+    border: 2px solid #f48fb1;
     box-shadow: 0 0 0 1px #f48fb1;
+    width: 50vw;
+    height: 2.5vw;
+    text-align: center;
+    position: relative;
+    left: 25vw;
+    top: 30vh
 }
   .active-pink-3 input[type="text"] {
     border: 1px solid #f48fb1;
     box-shadow: 0 0 0 1px #f48fb1;
+    width: 50vw;
+    height: 2.5vw;
+    text-align: center;
+    position: relative;
+    left: 25vw;
+    top: 30vh
 }
