@@ -23,7 +23,7 @@ constructor(props) {
               aria-describedby="basic-addon2"
             />
             <InputGroup.Append>
-              <Button onCLick={this.handleEnter.bind(this)} variant="outline-secondary">Button</Button>
+              <Button onCLick={this.handleEnter.bind(this)} variant="primary">Button</Button>
             </InputGroup.Append>
           </InputGroup>
         </Col>
