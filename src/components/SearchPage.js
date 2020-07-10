@@ -2,6 +2,7 @@ import React from "react";
 import { MDBCol } from "mdbreact";
 import "./SearchPage.css";
 import { Button, FormControl, FormGroup, InputGroup, Container, Col } from 'react-bootstrap';
+import logo from "../Images/logo.jpg";
 
 class SearchPage extends React.Component {
 constructor(props) {
@@ -14,6 +15,7 @@ constructor(props) {
     return (
       <Container>
         <Col md={{span: 6, offset: 3}}>
+          <img src={logo} alt="Logo"></img>
           <InputGroup size="lg" className="mb-3">
             <FormControl
               placeholder="Search Summoner"
