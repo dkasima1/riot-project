@@ -23,7 +23,7 @@ constructor(props) {
               aria-describedby="basic-addon2"
             />
             <InputGroup.Append>
-              <Button onCLick={this.handleEnter.bind(this)} variant="primary">Button</Button>
+              <Button onClick={this.handleEnter.bind(this)} variant="primary">Button</Button>
             </InputGroup.Append>
           </InputGroup>
         </Col>
@@ -32,7 +32,7 @@ constructor(props) {
   }
 
   handleEnter(e) {
-    alert("a key was pressed")
+    console.log(e)
   }
 }
 
