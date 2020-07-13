@@ -5,11 +5,11 @@ import { Button, FormControl, FormGroup, InputGroup, Container, Col } from 'reac
 import logo from "../Images/logo.jpg";
 
 class SearchPage extends React.Component {
-constructor(props) {
-  super(props);
-  
-  this.handleEnter = this.handleEnter.bind(this);
-}
+  constructor(props) {
+    super(props);
+    
+    this.handleEnter = this.handleEnter.bind(this);
+  }
 
   render () {
     return (
