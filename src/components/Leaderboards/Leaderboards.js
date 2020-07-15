@@ -23,7 +23,6 @@ class Leaderboards extends React.Component {
 		return (
 			<div>
 				<br /><br />
-				<br /><br />
 
 				<Table striped bordered size="sm" classname="leaderboardsTable">
 					<thead>
