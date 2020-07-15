@@ -1,4 +1,5 @@
 import React from "react";
+import { useTable } from "react-table";
 
 class Leaderboards extends React.Component {
 	constructor() {
@@ -7,34 +8,18 @@ class Leaderboards extends React.Component {
 			data: []
 		}
 	}
-
+	
 	componentDidMount() {
-		
-		console.log("omg mounted!!")
-
-/*		const fetch = require('node-fetch');
-		const https = require('https');
-		
-		const httpsAgent = new https.Agent({
-					rejectUnauthorized: false,
-				});
-*/
-		console.log("numba 2")
-
-		fetch('http://localhost:3001/Challenger', {
-//				agent: httpsAgent
-		})
+		fetch('http://localhost:3001/Challenger')
 		.then((res) => res.json())
     .then((data) => {
-			console.log("?")
-			data.entries.sort((a, b) => a.leaguePoints - b.leaguePoints);
+			data.entries.sort((a, b) => b.leaguePoints - a.leaguePoints);
 			this.setState({data: data.entries});
 		});
-		console.log("omg fining!!")
-		console.log(this.state.data)
 	}
 
 	render() {
+		let i = 1
 		return (
 			<div>
 				<br /><br />
@@ -43,15 +28,21 @@ class Leaderboards extends React.Component {
 				<table className="table">
 					<thead>
 						<tr>
+							<th>Rank</th>
 							<th>Name</th>
 							<th>LP</th>
+							<th>Wins</th>
+							<th>Losses</th>
 						</tr>
 					</thead>
 					<tbody>{this.state.data.map(function (item, key) {
 						return (
 							<tr key={key}>
+								<td>{i++}</td>
 								<td>{item.summonerName}</td>
 								<td>{item.leaguePoints}</td>
+								<td>{item.wins}</td>
+								<td>{item.losses}</td>
 							</tr>
 						)
 					})}</tbody>
