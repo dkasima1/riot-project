@@ -2,7 +2,6 @@ import React from "react";
 import { MDBCol } from "mdbreact";
 import "./SearchPage.css";
 import { Button, FormControl, FormGroup, InputGroup, Container, Col } from 'react-bootstrap';
-import logo from "../Images/logo.jpg";
 
 class SearchBar extends React.Component {
   constructor(props) {
