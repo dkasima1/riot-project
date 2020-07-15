@@ -17,7 +17,7 @@ class Champions extends React.Component {
             <div>
                 {
                     championIcons.map(
-                        (image, index) => <img key={index} src={image} alt="info"></img>
+                        (image, index) => <img style={{padding: '5px'}} className="col-md-1" key={index} src={image} alt="info"></img>
                     )
                 }       
             </div>
