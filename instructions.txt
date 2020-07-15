@@ -6,6 +6,10 @@ Installing Project Locally
 5) yarn add react-bootstrap bootstrap
 6) yarn add styled-components
 7) npm install --save mdbreact
+8) npm install -g json-server 
+9) json-server --watch public/db.json
+(If no permission run in windows powershell: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted)
+ 
 
 
 Git Branch Control
