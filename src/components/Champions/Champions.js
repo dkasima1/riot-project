@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Col } from 'react-bootstrap';
 
 var championIcons = []
 
@@ -17,6 +18,9 @@ class Champions extends React.Component {
     render() {
         return (
             <div>
+                <div style={{textAlign: 'center'}} className="page-header">
+                    <h1>Champion List</h1>
+                </div>
                 {
                     championIcons.map(
                         (image, index) => (
