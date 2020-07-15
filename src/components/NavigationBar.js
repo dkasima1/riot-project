@@ -20,7 +20,7 @@ function NavigationBar() {
 					</Nav>
 					<Nav>
 						<Nav.Link as={Link} to="/Deets">More deets</Nav.Link>
-						<Nav.Link as={Link} to="/Memes">Dank memes</Nav.Link>
+						<Nav.Link as={Link} to="/Memes">Memers here</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
