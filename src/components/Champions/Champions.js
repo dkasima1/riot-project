@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom';
+import { Card, Button } from 'react-bootstrap';
 
 var championIcons = []
 
@@ -17,7 +18,9 @@ class Champions extends React.Component {
             <div>
                 {
                     championIcons.map(
-                        (image, index) => <img style={{padding: '5px'}} className="col-md-1" key={index} src={image} alt="info"></img>
+                        (image, index) => (
+                            <img style={{padding: '5px'}} className="col-md-1" key={index} src={image} alt="info"></img>
+                        )
                     )
                 }       
             </div>
