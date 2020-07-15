@@ -5,6 +5,8 @@ import NavigationBar from "./components/NavigationBar";
 import Leaderboards from "./components/Leaderboards/Leaderboards";
 import Stats from "./components/Stats/Stats";
 import Champions from "./components/Champions/Champions";
+import Deets from "./components/Deets";
+import Memes from "./components/Memes";
 import Home from "./components/Home";
 import './App.css';
 
@@ -18,6 +20,8 @@ function App() {
           <Route path="/Leaderboards" component={ Leaderboards } />
           <Route path="/Champions" component={ Champions } />
           <Route path="/Stats" component={ Stats } />
+          <Route path="/Deets" component={ Deets } />
+          <Route path="/Memes" component={ Memes } />
         </Switch>
       </Router>
     </React.Fragment>
