@@ -15,10 +15,8 @@ function NavigationBar() {
                         <Nav.Link as={Link} to="/Stats">Stats</Nav.Link>
                     </Nav>
                     <Nav>
-                    <Nav.Link href="#deets">More deets</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
-                    </Nav.Link>
+                    <Nav.Link as={Link} to="/Deets">More deets</Nav.Link>
+                    <Nav.Link as={Link} to="/Memes">Dank memes</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

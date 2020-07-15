@@ -1,5 +1,5 @@
 import React from "react";
-import { useTable } from "react-table";
+import {Table} from "react-bootstrap";
 
 class Leaderboards extends React.Component {
 	constructor() {
@@ -25,7 +25,7 @@ class Leaderboards extends React.Component {
 				<br /><br />
 				<br /><br />
 
-				<table className="table">
+				<Table striped bordered size="sm" classname="leaderboardsTable">
 					<thead>
 						<tr>
 							<th>Rank</th>
@@ -46,7 +46,7 @@ class Leaderboards extends React.Component {
 							</tr>
 						)
 					})}</tbody>
-				</table>
+				</Table>
 
 			</div>
 		)
