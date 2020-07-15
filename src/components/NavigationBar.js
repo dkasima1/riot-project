@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import { Link } from 'react-router-dom'
+import SearchBar from './SearchBar'
 
 function NavigationBar() {
     return (
@@ -15,6 +16,7 @@ function NavigationBar() {
                         <Nav.Link as={Link} to="/Stats">Stats</Nav.Link>
                     </Nav>
                     <Nav>
+                    <SearchBar />
                     <Nav.Link as={Link} to="/Deets">More deets</Nav.Link>
                     <Nav.Link as={Link} to="/Memes">Dank memes</Nav.Link>
                     </Nav>
