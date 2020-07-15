@@ -18,6 +18,7 @@ function App() {
         <Switch>
           <Route path="/Home" component={ Home } />
           <Route path="/Leaderboards" component={ Leaderboards } />
+          <Route path="/Champions/*" component={ Memes } />
           <Route path="/Champions" component={ Champions } />
           <Route path="/Stats" component={ Stats } />
           <Route path="/Deets" component={ Deets } />

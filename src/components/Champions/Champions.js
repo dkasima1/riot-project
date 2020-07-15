@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 var championIcons = []
 
@@ -19,7 +20,9 @@ class Champions extends React.Component {
                 {
                     championIcons.map(
                         (image, index) => (
-                            <img style={{padding: '5px'}} className="col-md-1" key={index} src={image} alt="info"></img>
+                            <Link to={'/Champions/' + image.slice(27, -13)}>
+                                <img style={{padding: '5px'}} className="col-md-1" key={index} src={image} alt="info"></img>
+                            </Link>
                         )
                     )
                 }       
