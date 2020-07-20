@@ -3607,7 +3607,6 @@
       }
     ]
   },
-
   "Champion": {
     "type": "champion",
     "format": "standAloneComplex",
@@ -10978,5 +10977,144 @@
         }
       }
     }
-  }
+  },
+  "encryptedSummoner": [
+    {
+      "id": "tnYittAja3oX7lvBvlTas8U-Hs1NdZbSAfd-JtmFmSkLCpY",
+      "accountId": "LBBlgAnF5-abxf91IVBHT3oK66m9hnD6Vp-3_2LdnVFt5z4",
+      "puuid": "h1iqrQJvPtiG3a3HdYNODi1hFLrVMK9aTHDlPOQcvEBDMi9JOufZHA6uxcMbODTEvFS_tW1V5stzeQ",
+      "name": "RLpwns",
+      "profileIconId": 3868,
+      "revisionDate": 1595266664000,
+      "summonerLevel": 357
+    },
+    {
+      "id": "gSs8zSyhoOYwLRbBurWO8Uc33oF8ECB-uYuZ-SDfVn_mgTo",
+      "accountId": "4xRJ_5Mgzjb98yQeOMpvGbqUdjad44nNFiZ1jp-bJg21qQ",
+      "puuid": "RuHgSucqaV77BJ7iXZI_m1MzRzFTd8LNvQMQx5-uz4b55xFu4W8fEVFcSlCI2n-rsBgumNErlOCK0g",
+      "name": "Currian",
+      "profileIconId": 4244,
+      "revisionDate": 1595266407000,
+      "summonerLevel": 226
+    },
+    {
+      "id": "A06QzAU0fyfGEa_3zlG_7sWCTJpgeUU4oQh5jajgMr5lHZc",
+      "accountId": "hhcUe7g5RSSDcjnoxUDP9gxxEjONpR0T294MpukmflhPQQ",
+      "puuid": "DFZAeVIukuJpp6SJSXXihYEefl2h_x0g-pCYlw9NQ8uNbHpg_huxn93-_7BaEuRcPLCm9d0hTeqzJg",
+      "name": "Flyingsledge",
+      "profileIconId": 3353,
+      "revisionDate": 1595211546000,
+      "summonerLevel": 241
+    }
+  ],
+  "Summoner": [
+    [
+      {
+        "leagueId": "556d133e-9485-4c5f-b703-64730df98c48",
+        "queueType": "RANKED_FLEX_SR",
+        "tier": "PLATINUM",
+        "rank": "I",
+        "summonerId": "tnYittAja3oX7lvBvlTas8U-Hs1NdZbSAfd-JtmFmSkLCpY",
+        "summonerName": "RLpwns",
+        "leaguePoints": 100,
+        "wins": 39,
+        "losses": 41,
+        "veteran": false,
+        "inactive": false,
+        "freshBlood": false,
+        "hotStreak": false,
+        "miniSeries": {
+          "target": 3,
+          "wins": 0,
+          "losses": 1,
+          "progress": "LNNNN"
+        }
+      },
+      {
+        "leagueId": "136579ee-a212-34b0-b4b8-69ba529f4d7f",
+        "queueType": "RANKED_SOLO_5x5",
+        "tier": "MASTER",
+        "rank": "I",
+        "summonerId": "tnYittAja3oX7lvBvlTas8U-Hs1NdZbSAfd-JtmFmSkLCpY",
+        "summonerName": "RLpwns",
+        "leaguePoints": 6,
+        "wins": 263,
+        "losses": 246,
+        "veteran": false,
+        "inactive": false,
+        "freshBlood": true,
+        "hotStreak": false
+      }
+    ],
+    [
+      {
+        "leagueId": "e408eab5-67e0-4f8d-a620-508e22bf6f61",
+        "queueType": "RANKED_SOLO_5x5",
+        "tier": "DIAMOND",
+        "rank": "IV",
+        "summonerId": "gSs8zSyhoOYwLRbBurWO8Uc33oF8ECB-uYuZ-SDfVn_mgTo",
+        "summonerName": "Currian",
+        "leaguePoints": 14,
+        "wins": 85,
+        "losses": 81,
+        "veteran": false,
+        "inactive": false,
+        "freshBlood": false,
+        "hotStreak": false
+      },
+      {
+        "leagueId": "556d133e-9485-4c5f-b703-64730df98c48",
+        "queueType": "RANKED_FLEX_SR",
+        "tier": "PLATINUM",
+        "rank": "I",
+        "summonerId": "gSs8zSyhoOYwLRbBurWO8Uc33oF8ECB-uYuZ-SDfVn_mgTo",
+        "summonerName": "Currian",
+        "leaguePoints": 41,
+        "wins": 24,
+        "losses": 24,
+        "veteran": false,
+        "inactive": false,
+        "freshBlood": false,
+        "hotStreak": false
+      }
+    ],
+    [
+      {
+        "leagueId": "e408eab5-67e0-4f8d-a620-508e22bf6f61",
+        "queueType": "RANKED_SOLO_5x5",
+        "tier": "DIAMOND",
+        "rank": "IV",
+        "summonerId": "A06QzAU0fyfGEa_3zlG_7sWCTJpgeUU4oQh5jajgMr5lHZc",
+        "summonerName": "Flyingsledge",
+        "leaguePoints": 0,
+        "wins": 43,
+        "losses": 52,
+        "veteran": false,
+        "inactive": false,
+        "freshBlood": false,
+        "hotStreak": false
+      },
+      {
+        "leagueId": "ff02693f-0a88-44d5-98e7-bd8390cb1c2a",
+        "queueType": "RANKED_FLEX_SR",
+        "tier": "GOLD",
+        "rank": "I",
+        "summonerId": "A06QzAU0fyfGEa_3zlG_7sWCTJpgeUU4oQh5jajgMr5lHZc",
+        "summonerName": "Flyingsledge",
+        "leaguePoints": 100,
+        "wins": 18,
+        "losses": 15,
+        "veteran": false,
+        "inactive": false,
+        "freshBlood": false,
+        "hotStreak": false,
+        "miniSeries": {
+          "target": 3,
+          "wins": 1,
+          "losses": 1,
+          "progress": "LWNNN"
+        }
+      }
+    ]
+  ]
 }
