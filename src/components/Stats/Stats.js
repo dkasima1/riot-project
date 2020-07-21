@@ -53,11 +53,12 @@ class Leaderboards extends React.Component {
                 <table className="table">
                     <thead>
                         <tr>
-                            <th>Rank</th>
+                            <th>Icon</th>
                             <th>Name</th>
-                            <th>LP</th>
-                            <th>Wins</th>
-                            <th>Losses</th>
+                            <th>Position</th>
+                            <th>Win Rate</th>
+                            <th>Pick Rate</th>
+                            <th>Ban Rate</th>
                         </tr>
                     </thead>
                     <tbody>{this.state.data.map(function (item, key) {
