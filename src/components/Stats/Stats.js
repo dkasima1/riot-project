@@ -17,7 +17,7 @@ class Leaderboards extends React.Component {
             .then((res) => res.json())
             .then((data) => {
                 data.entries.sort((a, b) => b.leaguePoints - a.leaguePoints);
-                this.setState({ data: data.entries });
+                this.setState({ championIcon: , championName: , data: data.entries });
             });
     }
 
