@@ -1,12 +1,14 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Button, Form, FormControl } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
+
 
 class NavigationBar extends React.Component {
 	constructor() {
 		super()
 		this.state = {
-			summoner: ""
+			summoner: "",
+			toSearch: false
 		}
 
 		this.handleChange = this.handleChange.bind(this)
@@ -14,6 +16,9 @@ class NavigationBar extends React.Component {
 	}
 
 	render() {
+		if (this.state.toSearch === true) {
+			return <Redirect to={"/Summoner/" + this.state.summoner} />
+		}
 		return (
 			<div>
 				<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -29,7 +34,7 @@ class NavigationBar extends React.Component {
 							<Form inline>
 								<FormControl name="summoner" value={this.state.summoner} 
 									onChange={this.handleChange} placeholder="Search" className="mr-sm-2" />
-								<Link to='/Summoner/rlpwns'>
+								<Link to={"/Summoner/" + this.state.summoner}>
 									<Button>
 										meep button
 									</Button>
@@ -48,7 +53,6 @@ class NavigationBar extends React.Component {
 	}
 	handleOnClick() {
 		alert("searched " + this.state.summoner);
-//		this.state.summoner ? <Link to="/Summoner/"+{this.state.summoner}
 	}
 
 	handleChange(event) {
