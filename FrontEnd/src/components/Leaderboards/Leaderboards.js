@@ -1,5 +1,6 @@
 import React from "react";
 import {Table} from "react-bootstrap";
+import axios from "axios";
 
 class Leaderboards extends React.Component {
 	constructor() {
@@ -10,11 +11,12 @@ class Leaderboards extends React.Component {
 	}
 	
 	componentDidMount() {
-		fetch('http://localhost:3001/Challenger')
-		.then((res) => res.json())
-    .then((data) => {
-			data.entries.sort((a, b) => b.leaguePoints - a.leaguePoints);
-			this.setState({data: data.entries});
+		axios.get("/Challenger")
+		// .then((res) => res.json())
+    	.then((data) => {
+			console.log(data.data);
+			data.data.entries.sort((a, b) => b.leaguePoints - a.leaguePoints);
+			this.setState({data: data.data.entries});
 		});
 	}
 

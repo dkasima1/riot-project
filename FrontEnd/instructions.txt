@@ -9,7 +9,7 @@ Installing Project Locally
 8) npm install -g json-server 
 9) json-server --watch public/db.json --port 3001
 (If no permission run in windows powershell: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted)
- 
+10) npm i axios --save
 
 
 Git Branch Control
