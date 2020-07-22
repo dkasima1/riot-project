@@ -8,6 +8,7 @@ import Champions from "./components/Champions/Champions";
 import Deets from "./components/Deets";
 import Memes from "./components/Memes";
 import Home from "./components/Home";
+import Summoner from "./components/Summoner";
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Leaderboards" component={ Leaderboards } />
           <Route path="/Champions/*" component={ Memes } />
           <Route path="/Champions" component={ Champions } />
+          <Route path="/Summoner/:summoner" component={ Summoner } />
           <Route path="/Stats" component={ Stats } />
           <Route path="/Deets" component={ Deets } />
           <Route path="/Memes" component={ Memes } />

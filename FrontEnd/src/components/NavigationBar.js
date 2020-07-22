@@ -29,7 +29,12 @@ class NavigationBar extends React.Component {
 							<Form inline>
 								<FormControl name="summoner" value={this.state.summoner} 
 									onChange={this.handleChange} placeholder="Search" className="mr-sm-2" />
-								<Button	onClick={this.handleOnClick} variant="outline-info"> Search</Button>
+								<Link to='/Summoner/rlpwns'>
+									<Button>
+										meep button
+									</Button>
+								</Link>
+								
 							</Form>
 						</Navbar>
 						<Nav>
@@ -43,11 +48,12 @@ class NavigationBar extends React.Component {
 	}
 	handleOnClick() {
 		alert("searched " + this.state.summoner);
+//		this.state.summoner ? <Link to="/Summoner/"+{this.state.summoner}
 	}
 
 	handleChange(event) {
 		this.setState({summoner: event.target.value})
 	}
-	
+
 }
 export default NavigationBar;
