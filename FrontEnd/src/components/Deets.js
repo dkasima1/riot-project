@@ -1,10 +1,6 @@
 import React from "react"
 
 class Deets extends React.Component {
-  constructor() {
-    super()
-  }
-
   render() {
     return (
       <div>
