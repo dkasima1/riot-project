@@ -24,7 +24,7 @@ class Leaderboards extends React.Component {
 			<div>
 				<br /><br />
 
-				<Table striped bordered size="sm" classname="leaderboardsTable">
+				<Table striped bordered size="sm" className="leaderboardsTable">
 					<thead>
 						<tr>
 							<th>Rank</th>

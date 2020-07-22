@@ -11007,8 +11007,8 @@
       "summonerLevel": 241
     }
   ],
-  "Summoner": [
-    [
+  "Summoner": {
+    "rlpwns": [
       {
         "leagueId": "556d133e-9485-4c5f-b703-64730df98c48",
         "queueType": "RANKED_FLEX_SR",
@@ -11046,7 +11046,7 @@
         "hotStreak": false
       }
     ],
-    [
+    "currian": [
       {
         "leagueId": "e408eab5-67e0-4f8d-a620-508e22bf6f61",
         "queueType": "RANKED_SOLO_5x5",
@@ -11078,7 +11078,7 @@
         "hotStreak": false
       }
     ],
-    [
+    "flyingsledge": [
       {
         "leagueId": "e408eab5-67e0-4f8d-a620-508e22bf6f61",
         "queueType": "RANKED_SOLO_5x5",
@@ -11116,5 +11116,5 @@
         }
       }
     ]
-  ]
+  }
 }
