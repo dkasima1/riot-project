@@ -6,24 +6,29 @@ class Summoner extends React.Component {
     super(props)
     this.state = {
       data: [],
-      summoner: "default"
+      loading: true
     }
   }
 
   componentDidMount() {
-    console.log("meep!")
-    this.setState({ summoner: this.props.match.params.summoner })
-    console.log(this.props.match.params.summoner)
-
     fetch('http://localhost:3001/Summoner/' + this.props.match.params.summoner)
       .then((res) => res.json())
       .then((summoner) => {
-        this.setState({ data: summoner.data });
+        this.setState({ data: summoner.data, loading: false });
       });
-    console.log(this.state.data)
   }
 
   render() {
+    if (this.state.loading) {
+      return (
+        <h1>Loading...</h1>
+      )
+    }
+    if (!this.state.data) {
+      return (
+        <h1>No summoner found!</h1>
+      )
+    }
     return (
       <Table striped bordered size="sm" className="leaderboardsTable">
 					<thead>

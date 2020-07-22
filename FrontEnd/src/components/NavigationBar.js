@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Button, Form, FormControl } from 'react-bootstrap';
-import { Link, Redirect } from 'react-router-dom'
+import { Link, Redirect, withRouter } from 'react-router-dom'
 
 
 class NavigationBar extends React.Component {
@@ -13,6 +13,7 @@ class NavigationBar extends React.Component {
 
 		this.handleChange = this.handleChange.bind(this)
 		this.handleOnClick = this.handleOnClick.bind(this)
+		this.handleSubmit = this.handleSubmit.bind(this)
 	}
 
 	render() {
@@ -31,15 +32,14 @@ class NavigationBar extends React.Component {
 							<Nav.Link as={Link} to="/Stats">Stats</Nav.Link>
 						</Nav>
 						<Navbar bg="dark" variant="dark">
-							<Form inline>
+							<Form inline >
 								<FormControl name="summoner" value={this.state.summoner} 
 									onChange={this.handleChange} placeholder="Search" className="mr-sm-2" />
 								<Link to={"/Summoner/" + this.state.summoner}>
 									<Button>
 										meep button
 									</Button>
-								</Link>
-								
+								</Link>		
 							</Form>
 						</Navbar>
 						<Nav>
@@ -59,5 +59,9 @@ class NavigationBar extends React.Component {
 		this.setState({summoner: event.target.value})
 	}
 
+	handleSubmit(event) {
+		event.preventDefault()
+		this.props.history.push("/Summoner/" + this.state.summoner)	
+	}
 }
-export default NavigationBar;
+export default withRouter(NavigationBar);
