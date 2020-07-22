@@ -32,14 +32,10 @@ class NavigationBar extends React.Component {
 							<Nav.Link as={Link} to="/Stats">Stats</Nav.Link>
 						</Nav>
 						<Navbar bg="dark" variant="dark">
-							<Form inline >
+							<Form inline onSubmit={this.handleSubmit}>
 								<FormControl name="summoner" value={this.state.summoner} 
 									onChange={this.handleChange} placeholder="Search" className="mr-sm-2" />
-								<Link to={"/Summoner/" + this.state.summoner}>
-									<Button>
-										meep button
-									</Button>
-								</Link>		
+								<Button	type="submit" variant="outline-info">Search</Button>
 							</Form>
 						</Navbar>
 						<Nav>
