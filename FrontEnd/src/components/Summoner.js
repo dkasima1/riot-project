@@ -1,5 +1,6 @@
 import React from "react"
-import { Table } from "react-bootstrap";
+import {Table} from "react-bootstrap";
+import axios from "axios";
 
 class Summoner extends React.Component {
   constructor(props) {
@@ -62,9 +63,9 @@ class Summoner extends React.Component {
   }
 
   fetchData() {
-    fetch('http://localhost:3001/Summoner/' + this.props.match.params.summoner)
-      .then((res) => res.json())
+    axios.get('/Summoner/' + this.props.match.params.summoner)
       .then((summoner) => {
+        console.log(summoner.data);
         this.setState({ data: summoner.data, loading: false });
       });
   }

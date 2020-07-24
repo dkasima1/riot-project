@@ -18,7 +18,7 @@ class NavigationBar extends React.Component {
 
 	render() {
 		if (this.state.toSearch === true) {
-			return <Redirect to={"/Summoner/" + this.state.summoner} />
+			return <Redirect to={"/Summoner?name=" + this.state.summoner} />
 		}
 		return (
 			<div>
