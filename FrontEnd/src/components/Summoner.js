@@ -69,6 +69,15 @@ class Summoner extends React.Component {
         this.setState({ data: summoner.data, loading: false });
       });
   }
+  /*
+  fetchData() {
+    fetch('http://localhost:3001/Summoner/' + this.props.match.params.summoner)
+      .then((res) => res.json())
+      .then((summoner) => {
+        this.setState({ data: summoner.data, loading: false });
+      });
+  }
+  */
 }
 
 export default Summoner
