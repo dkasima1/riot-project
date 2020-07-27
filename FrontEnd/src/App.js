@@ -8,7 +8,7 @@ import Champions from "./components/Champions/Champions";
 import Deets from "./components/Deets";
 import Memes from "./components/Memes";
 import Home from "./components/Home";
-import Summoner from "./components/Summoner";
+import Summoner from "./components/Summoner/Summoner";
 import './App.css';
 
 function App() {
