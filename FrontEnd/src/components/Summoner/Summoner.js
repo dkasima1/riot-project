@@ -80,7 +80,7 @@ class Summoner extends React.Component {
             </tr>
           </thead>
           <tbody>{this.state.matches.map(function (item, key) {
-            console.log(this.championID);
+            //console.log(this.championID);
             return (
               /*<Match 
                 gameId={item.gameId} 
