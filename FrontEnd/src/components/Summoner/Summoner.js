@@ -10,14 +10,20 @@ class Summoner extends React.Component {
       summonerInfo: [],
       summonerData: [],
       matches: [],
-      loading: true
+      loading: true,
     }
-
+    this.championID = {};
     this.fetchData = this.fetchData.bind(this)
   }
 
   componentDidMount() {
-    this.fetchData()
+    axios.get('/getChampionID/') // summoner info
+      .then((ID) => {
+        console.log("test");
+        console.log(ID.data);
+        this.championID = ID;
+      });
+    this.fetchData();
   }
 
   componentDidUpdate(prevProps) {
@@ -74,6 +80,7 @@ class Summoner extends React.Component {
             </tr>
           </thead>
           <tbody>{this.state.matches.map(function (item, key) {
+            console.log(this.championID);
             return (
               /*<Match 
                 gameId={item.gameId} 
@@ -113,6 +120,7 @@ class Summoner extends React.Component {
             this.setState({ matches: summonerMatches.data.matches, loading: false });
             console.log(this.state.matches)
           });
+        
       })
   }
   /*

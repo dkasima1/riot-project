@@ -1,10 +1,11 @@
 const express = require('express')
 var request = require('request')
+var fs = require('fs');
 
 const app = express()
 const port = 3002
 
-const api_key_bannu = 'RGAPI-adf9a066-6f4f-4eea-88cf-0e4011335902'
+const api_key_bannu = 'RGAPI-bb897e8b-5a7a-44d5-b826-42d811d027a4'
 
 app.get('/Challenger', (req, res) => {
 	request('https://na1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=' + api_key_bannu, function (error, response, body) {
@@ -37,5 +38,33 @@ app.get('/SummonerMatches/:accountId', (req, res) => {
 		}
 	})
 });
+
+/***** DO NOT DELETE THIS COMMENTED GET *******/
+
+// app.get('/getChampionID', (req, res) => {
+// 	request('http://ddragon.leagueoflegends.com/cdn/10.15.1/data/en_US/champion.json', function (error, response, body) {
+// 		if (!error && response.statusCode == 200) {
+//             body = JSON.parse(body).data
+//             var championID = {};
+//             Object.entries(body).forEach((entry) => {
+//                 championID[entry[1].key] = entry[1].id;
+//             });
+//             console.log(JSON.stringify(championID));
+//             res.send(JSON.stringify(championID));
+//             // for (let i = 0; i < body.data.length; i++) {
+
+//             // }
+// 		}
+// 	})
+// });
+
+/************************************************* */
+
+app.get('/getChampionID', (req, res) => {
+    var data = JSON.parse(fs.readFileSync('./championID.json', 'utf8'));
+    console.log(data);
+    res.send(data);
+});
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
