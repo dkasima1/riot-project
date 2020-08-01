@@ -62,9 +62,33 @@ app.get('/SummonerMatches/:accountId', (req, res) => {
 
 app.get('/getChampionID', (req, res) => {
     var data = JSON.parse(fs.readFileSync('./championID.json', 'utf8'));
-    console.log(data);
+    // console.log(data);
     res.send(data);
 });
 
+/***** DO NOT DELETE THIS COMMENTED GET *******/
+
+// app.get('/QueueID', (req, res) => {
+// 	request('http://static.developer.riotgames.com/docs/lol/queues.json', function (error, response, body) {
+// 		if (!error && response.statusCode == 200) {
+//             body = JSON.parse(body)
+//             // console.log(body);
+//             var queue = {};
+//             Object.entries(body).forEach((entry) => {
+//                 console.log(entry[1].queueId, entry[1].map);
+//                 queue[entry[1].queueId] = entry[1].map;
+//             })
+//             console.log(JSON.stringify(queue));
+//         }
+// 	})
+// });
+
+/************************************************* */
+
+app.get('/QueueID', (req, res) => {
+    var data = JSON.parse(fs.readFileSync('./queueID.json', 'utf8'));
+    // console.log(data);
+    res.send(data);
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

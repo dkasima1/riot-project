@@ -11,18 +11,15 @@ class Summoner extends React.Component {
       summonerData: [],
       matches: [],
       loading: true,
+      championID: {},
+      queue: {
+        "1": "Summoner's Rift",
+      }
     }
-    this.championID = {};
     this.fetchData = this.fetchData.bind(this)
   }
 
   componentDidMount() {
-    axios.get('/getChampionID/') // summoner info
-      .then((ID) => {
-        console.log("test");
-        console.log(ID.data);
-        this.championID = ID;
-      });
     this.fetchData();
   }
 
@@ -43,6 +40,12 @@ class Summoner extends React.Component {
         <h1>No summoner found!</h1>
       )
     }
+    if (typeof this.state.championID === 'undefined') {
+      return (
+        <h1>Loading...</h1>
+      )
+    }
+    console.log(this.state);
     return (
       <div>
         <Table striped bordered size="sm" className="leaderboardsTable" key={this.state.summonerInfo.name}>
@@ -79,7 +82,7 @@ class Summoner extends React.Component {
               <th>lane</th>
             </tr>
           </thead>
-          <tbody>{this.state.matches.map(function (item, key) {
+          <tbody>{this.state.matches.map((item, key) => {
             //console.log(this.championID);
             return (
               /*<Match 
@@ -90,8 +93,8 @@ class Summoner extends React.Component {
               />*/
               <tr key={key}>
                 <td>{item.gameId}</td>
-                <td>{item.champion}</td>
-                <td>{item.queue}</td>
+                <td>{this.state.championID[item.champion]}</td>
+            <td>{this.state.queueID[item.queue]}</td>
                 <td>{item.lane}</td>
               </tr>
             )
@@ -114,13 +117,20 @@ class Summoner extends React.Component {
             console.log(summonerData.data);
             this.setState({ summonerData: summonerData.data });
           });
+        axios.get('/getChampionID/') // summoner info
+          .then((ID) => {
+            this.setState({championID : ID.data});
+          });
+        axios.get('/QueueID/') // summoner info
+          .then((queue) => {
+            this.setState({queueID : queue.data});
+          });
         axios.get('/SummonerMatches/' + this.state.summonerInfo.accountId) // summoner info
           .then((summonerMatches) => {
             console.log(summonerMatches);
             this.setState({ matches: summonerMatches.data.matches, loading: false });
             console.log(this.state.matches)
           });
-        
       })
   }
   /*
