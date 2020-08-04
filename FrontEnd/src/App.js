@@ -9,6 +9,7 @@ import Deets from "./components/Deets";
 import Memes from "./components/Memes";
 import Home from "./components/Home";
 import Summoner from "./components/Summoner/Summoner";
+import Match from "./components/Summoner/Match";
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Champions/*" component={ Memes } />
           <Route path="/Champions" component={ Champions } />
           <Route path="/Summoner/:summoner" component={ Summoner } />
+          <Route path="/Match/:gameId" component={ Match } />
           <Route path="/Stats" component={ Stats } />
           <Route path="/Deets" component={ Deets } />
           <Route path="/Memes" component={ Memes } />

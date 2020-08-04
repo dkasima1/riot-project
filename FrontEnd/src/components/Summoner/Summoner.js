@@ -1,7 +1,6 @@
 import React from "react"
 import { Table } from "react-bootstrap";
 import axios from "axios";
-import Match from "./Match"
 
 class Summoner extends React.Component {
   constructor(props) {
@@ -17,6 +16,7 @@ class Summoner extends React.Component {
       }
     }
     this.fetchData = this.fetchData.bind(this)
+    this.handleLink = this.handleLink.bind(this)
   }
 
   componentDidMount() {
@@ -91,10 +91,10 @@ class Summoner extends React.Component {
                 queue={item.queue}
                 lane={item.lane}
               />*/
-              <tr key={key}>
+              <tr key={key} onClick={() => {this.handleLink(item.gameId)}}>
                 <td>{item.gameId}</td>
                 <td>{this.state.championID[item.champion]}</td>
-            <td>{this.state.queueID[item.queue]}</td>
+                <td>{this.state.queueID[item.queue]}</td>
                 <td>{item.lane}</td>
               </tr>
             )
@@ -112,20 +112,20 @@ class Summoner extends React.Component {
         this.setState({ summonerInfo: summonerInfo.data });
       })
       .then(() => {
-        axios.get('/SummonerData/' + this.state.summonerInfo.id) // summoner info
+        axios.get('/SummonerData/' + this.state.summonerInfo.id) // summoner data
           .then((summonerData) => {
             console.log(summonerData.data);
             this.setState({ summonerData: summonerData.data });
           });
-        axios.get('/getChampionID/') // summoner info
+        axios.get('/getChampionID/') // champion id/name map
           .then((ID) => {
-            this.setState({championID : ID.data});
+            this.setState({ championID: ID.data });
           });
-        axios.get('/QueueID/') // summoner info
+        axios.get('/QueueID/') // queue info
           .then((queue) => {
-            this.setState({queueID : queue.data});
+            this.setState({ queueID: queue.data });
           });
-        axios.get('/SummonerMatches/' + this.state.summonerInfo.accountId) // summoner info
+        axios.get('/SummonerMatches/' + this.state.summonerInfo.accountId) // summoner's matches
           .then((summonerMatches) => {
             console.log(summonerMatches);
             this.setState({ matches: summonerMatches.data.matches, loading: false });
@@ -133,15 +133,11 @@ class Summoner extends React.Component {
           });
       })
   }
-  /*
-  fetchData() {
-    fetch('http://localhost:3001/Summoner/' + this.props.match.params.summoner)
-      .then((res) => res.json())
-      .then((summoner) => {
-        this.setState({ data: summoner.data, loading: false });
-      });
+
+  handleLink(gameId) {
+    console.log(gameId)
+    this.props.history.push("/Match/" + gameId)
   }
-  */
 }
 
 export default Summoner
