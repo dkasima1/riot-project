@@ -5,7 +5,7 @@ var fs = require('fs');
 const app = express()
 const port = 3002
 
-const api_key_bannu = 'RGAPI-102d55d0-c4a2-4354-a186-016f96b18101'
+const api_key_bannu = 'hidden'
 
 app.get('/Challenger', (req, res) => {
 	request('https://na1.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=' + api_key_bannu, function (error, response, body) {
